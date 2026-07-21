@@ -1,0 +1,16 @@
+# Host address (adjust port if needed)
+@Host = http://localhost:5000
+
+### Health
+GET {{Host}}/health
+Accept: text/plain
+
+### Create customer (example for vertical-slice CreateCustomer endpoint)
+POST {{Host}}/api/customers
+Content-Type: application/json
+
+{
+  "name": "Jane Doe",
+  "email": "jane@example.com",
+  "phone": "555-0100"
+}

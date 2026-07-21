@@ -1,0 +1,1 @@
+﻿DeleteProduct module placeholder.

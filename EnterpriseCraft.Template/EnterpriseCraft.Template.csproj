@@ -1,0 +1,58 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="src\Modules\Customers\NewFolder\**" />
+    <Content Remove="src\Modules\Customers\NewFolder\**" />
+    <EmbeddedResource Remove="src\Modules\Customers\NewFolder\**" />
+    <None Remove="src\Modules\Customers\NewFolder\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="12.1.1" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="12.1.1" />
+    <PackageReference Include="Mapster" Version="10.0.10" />
+    <PackageReference Include="Mapster.DependencyInjection" Version="10.0.10" />
+    <PackageReference Include="MediatR" Version="14.2.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.17" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="9.0.17" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.17" />
+    <PackageReference Include="Scrutor" Version="7.0.0" />
+    <PackageReference Include="Serilog.AspNetCore" Version="10.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="9.0.6" />
+  </ItemGroup>
+
+	<ItemGroup>
+  <Folder Include="src\Shared\" />
+  <Folder Include="src\Shared\Behaviors\" />
+  <Folder Include="src\Shared\Persistence\" />
+  <Folder Include="src\Shared\Authentication\" />
+  <Folder Include="src\Shared\Authorization\" />
+  <Folder Include="src\Shared\Common\" />
+  <Folder Include="src\Shared\Exceptions\" />
+  <Folder Include="src\Shared\Logging\" />
+  <Folder Include="src\Shared\Contracts\" />
+  <Folder Include="src\Shared\Persistence\" />
+		<Folder Include="src\Shared\Authentication\" />
+		<Folder Include="src\Shared\Authorization\" />
+		<Folder Include="src\Shared\Common\" />
+		<Folder Include="src\Shared\Exceptions\" />
+		<Folder Include="src\Shared\Logging\" />
+		<Folder Include="src\Shared\Contracts\" />
+		<Folder Include="src\Modules\Orders\" />
+		<Folder Include="src\Modules\Inventory\" />
+		<Folder Include="src\Modules\Identity\" />
+		<Folder Include="src\Tests\" />
+		<Folder Include="src\Modules\Orders\" />
+  <Folder Include="src\Modules\Inventory\" />
+  <Folder Include="src\Tests\" />
+</ItemGroup>
+
+</Project>
